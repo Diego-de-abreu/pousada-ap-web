@@ -1,8 +1,14 @@
 
 import { Button } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 import './Anfitriao.css';
 
 export default function Anfitriao() {
+  const navigate = useNavigate();
+
+  const handleBack = () => {
+    navigate('/');
+  };
 return (
     <div id="cardBox" className="card-box">
       <div className="card-content">
@@ -51,7 +57,8 @@ return (
             </div>
             {/* {messageError && <div className="login-error">{messageError}</div>} */}
             <Button variant="contained" type="submit" sx={{width:"100%"}}>Entrar</Button>
-            <Button variant="outlined"  sx={{width:"100%", marginTop: 2}}>Voltar</Button>
+                       <Button variant="outlined" onClick={handleBack} sx={{width:"100%", marginTop: 2}}>Voltar</Button>
+            {/* <Button variant="outlined"  sx={{width:"100%", marginTop: 2}}>Voltar</Button> */}
           </form>
         </div>
         <div className="notRegister">
