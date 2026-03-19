@@ -17,7 +17,9 @@ export default function Header() {
           🛎️ Serviços
         </button>
       </nav>
-      <div className="actions">Torne-se um anfitrião</div>
+      <button className="menu-item" onClick={() => navigate("/anfitriao")}>
+          🏡 Torne-se um anfitrião
+      </button>
     </header>
   );
 }
