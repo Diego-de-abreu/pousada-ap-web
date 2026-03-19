@@ -1,0 +1,155 @@
+/* Container principal */
+.card-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+}
+
+/* Card central */
+.card-content {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.logo-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1976d2;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Divisor */
+.social-login-title {
+  margin-bottom: 24px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.divider-line {
+  flex: 1;
+  height: 1px;
+  background-color: #d0d0d0;
+}
+
+.divider-text {
+  font-size: 13px;
+  color: #777;
+  white-space: nowrap;
+}
+
+/* Formulário */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Grupos de campos */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.required {
+  color: #e53935;
+  margin-left: 2px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #c4c4c4;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #333;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: #1976d2;
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.15);
+}
+
+.form-input::placeholder {
+  color: #aaa;
+}
+
+/* Link esqueci a senha */
+.form-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.form-link {
+  font-size: 13px;
+  color: #1976d2;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.form-link:hover {
+  color: #1254a1;
+}
+
+/* Mensagem de erro */
+.login-error {
+  background-color: #fdecea;
+  color: #c62828;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 13px;
+}
+
+/* Animação fade */
+.fade {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Cadastro */
+.notRegister {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.notRegister-link {
+  font-size: 13px;
+  color: #1976d2;
+  text-decoration: underline;
+}
+
+.notRegister-link:hover {
+  color: #1254a1;
+}
